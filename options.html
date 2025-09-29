@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AIRoleViewer插件配置</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+    <h1>AIRoleViewer插件配置</h1>
+
+    <br />
+
+    <h2>1. DeepSeek Api-Key:
+
+        <label for="appToken"> </label>
+        <input type="text" id="appToken" placeholder="请输入您的DeepSeek Api-Key" style="width: 400px;" />
+        <button id="saveToken">保存</button>
+    </h2>
+
+    <br />
+
+    <h2>2. 翻译时提示词要求</h2>
+
+    <ul id="ruleList"></ul>
+
+    <div id="controls">
+        <input type="text" id="ruleInput" placeholder="输入要替换的文本">
+        <button id="addBtn">添加要求</button>
+    </div>
+
+    <button id="saveBtn">保存提示词要求</button>
+
+    <br />
+
+    <h2>3. 插件参数</h2>
+    <ul class="config-list">
+        <li>
+            <span class="dot">·</span>
+            <label for="maxWords" class="label-bold">单次翻译字数:</label>
+            <select id="maxWords">
+                <option value="50">50</option>
+                <option value="100" selected>100</option>
+                <option value="200">200</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+                <option value="2000">2000</option>
+                <option value="5000">5000</option>
+            </select>
+        </li>
+    </ul>
+
+
+    <!-- 外部 JS 文件 -->
+    <script src="options.js"></script>
+</body>
+
+</html>

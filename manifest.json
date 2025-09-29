@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "role-playing-page-viewer",
+    "version": "1.0",
+    "description": "AI角色扮演式转译网页",
+    "permissions": [
+        "contextMenus",
+        "scripting",
+        "activeTab",
+        "storage"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "image.png",
+            "32": "image.png",
+            "48": "image.png",
+            "128": "image.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "options_page": "options.html",
+    "icons": {
+        "16": "image.png",
+        "32": "image.png",
+        "48": "image.png",
+        "128": "image.png"
+    }
+}
